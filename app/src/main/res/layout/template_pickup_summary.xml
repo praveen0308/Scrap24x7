@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_pickup_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_pickup_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID : "
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pickup_id"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="@+id/tv_pickup_id" />
+
+        <TextView
+            android:id="@+id/tv_pickup_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PR100014444445"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/lbl_pickup_id"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pickup_status" />
+
+        <TextView
+            android:id="@+id/lbl_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Customer : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pickup_id" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <TextView
+            android:id="@+id/tv_customer_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/iv_call_customer"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_customer"
+            tools:text="Milli Bobby" />
+
+        <TextView
+            android:id="@+id/tv_pickup_driver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/iv_call_driver"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_pickup_driver"
+            tools:text="Milli Bobby" />
+
+        <TextView
+            android:id="@+id/tv_pickup_executive"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_pickup_executive"
+            tools:text="Milli Bobby" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <TextView
+            android:id="@+id/lbl_pickup_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pickup Location : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/tv_customer_name" />
+
+        <TextView
+            android:id="@+id/lbl_pickup_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pickup Driver : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pickup_timing" />
+
+        <TextView
+            android:id="@+id/lbl_pickup_timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pickup Timing : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pickup_location" />
+
+        <TextView
+            android:id="@+id/tv_pickup_timing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintEnd_toStartOf="@id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_pickup_timing"
+            tools:text="11th June 2021 (10 AM - 6 PM)" />
+
+        <TextView
+            android:id="@+id/lbl_pickup_executive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pickup Executive : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pickup_driver" />
+
+        <TextView
+            android:id="@+id/lbl_pickup_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Payment Status : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/rv_pickup_items" />
+
+        <TextView
+            android:id="@+id/lbl_payment_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Payment Mode : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_pickup_status" />
+
+        <TextView
+            android:id="@+id/lbl_payment_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Payment Detail : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_payment_mode" />
+
+        <TextView
+            android:id="@+id/lbl_grand_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Grand Total : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/rv_payment_items" />
+
+        <TextView
+            android:id="@+id/lbl_pickup_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pickup Items : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pickup_executive" />
+
+        <TextView
+            android:id="@+id/tv_pickup_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="@string/dummy_address"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/iv_location_direction"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_pickup_location" />
+
+        <ImageView
+            android:id="@+id/iv_pickup_status"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_baseline_circle_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pickup_status"
+            app:layout_constraintEnd_toStartOf="@+id/tv_pickup_status"
+            app:layout_constraintTop_toTopOf="@+id/tv_pickup_status"
+            app:tint="@color/Red" />
+
+        <ImageView
+            android:id="@+id/iv_call_customer"
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_round_phone_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_customer_name"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/tv_customer_name" />
+
+        <ImageView
+            android:id="@+id/iv_call_driver"
+            android:layout_width="32dp"
+            android:layout_height="33dp"
+            android:src="@drawable/ic_round_phone_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pickup_driver"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/tv_pickup_driver" />
+
+        <ImageView
+            android:id="@+id/iv_call_executive"
+            android:layout_width="32dp"
+            android:layout_height="33dp"
+            android:src="@drawable/ic_round_phone_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pickup_executive"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/tv_pickup_executive" />
+
+        <ImageView
+            android:id="@+id/iv_location_direction"
+            android:layout_width="36dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_round_assistant_direction_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pickup_location"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/tv_pickup_location" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pickup_items"
+            android:layout_width="0dp"
+            android:layout_height="267dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_pickup_items"
+            tools:listitem="@layout/template_hr_scrap_category_item_view" />
+
+        <TextView
+            android:id="@+id/tv_payment_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_pickup_status"
+            app:layout_constraintStart_toEndOf="@+id/lbl_pickup_status"
+            app:layout_constraintTop_toTopOf="@+id/lbl_pickup_status" />
+
+        <TextView
+            android:id="@+id/tv_payment_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_payment_mode"
+            app:layout_constraintStart_toEndOf="@+id/lbl_payment_mode"
+            app:layout_constraintTop_toTopOf="@+id/lbl_payment_mode" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_payment_items"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_payment_detail"
+            tools:itemCount="2"
+            tools:listitem="@layout/template_hr_scrap_category_item_view" />
+
+        <TextView
+            android:id="@+id/tv_grand_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 500"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_grand_total"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/lbl_grand_total" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_pickup_id_n_stauts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lbl_pickup_id,tv_pickup_id,iv_pickup_status,tv_pickup_status"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="75dp"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_customer_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lbl_customer,tv_customer_name,iv_call_customer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_pickup_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lbl_pickup_location,tv_pickup_location,iv_location_direction"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lbl_pickup_driver,tv_pickup_driver,iv_call_driver"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_pickup_timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lbl_pickup_timing,tv_pickup_timing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_executive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lbl_pickup_executive,tv_pickup_executive,iv_call_executive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_pickup_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lbl_pickup_items,rv_pickup_items"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_payment_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lbl_pickup_status,tv_payment_status"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_payment_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lbl_payment_mode,tv_payment_mode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_payment_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="lbl_payment_detail,rv_payment_items,lbl_grand_total,tv_grand_total"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+
+        <!--        <com.google.android.material.card.MaterialCardView-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            app:layout_constraintEnd_toStartOf="@+id/guideline7"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/guideline6"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/lbl_payment_mode"-->
+        <!--            app:strokeWidth="1dp"-->
+        <!--            app:strokeColor="@color/Silver"-->
+        <!--            app:cardElevation="0dp">-->
+
+        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:paddingHorizontal="8dp">-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/imageView14"-->
+        <!--                    android:layout_width="32dp"-->
+        <!--                    android:layout_height="0dp"-->
+        <!--                    android:src="@drawable/ic_cash_method"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+        <!--        </com.google.android.material.card.MaterialCardView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

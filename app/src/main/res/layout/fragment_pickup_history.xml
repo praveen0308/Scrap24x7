@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".ui.customer.dashboard.PickupHistory">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pickup_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_customer_pickup_history"
+        tools:listitem="@layout/template_pickup_request_type_2"
+        android:paddingVertical="16dp"/>
+
+    <com.jmm.brsap.scrap24x7.util.ApplicationToolbar
+        android:id="@+id/toolbar_customer_pickup_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:ATTitle="Pickup Requests"
+        app:ATTitleGravity="CENTER"
+        app:ATNavIconVisibility="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jmm.brsap.scrap24x7.util.MyEmptyView
+        android:id="@+id/myEmptyView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:MEVTitle="You have not raised any pickup request till now."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_customer_pickup_history" />
+</androidx.constraintlayout.widget.ConstraintLayout>

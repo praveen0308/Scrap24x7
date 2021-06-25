@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorTextPrimary"
+        tools:text="TextView" />
+    <TextView
+        android:id="@+id/tv_no_item_chosen"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="No item choosen !!!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+/>
+<!--    <include-->
+<!--        android:id="@+id/selected_item"-->
+<!--        layout="@layout/template_master_rv_action_row_type2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone"-->
+
+<!--        tools:visibility="visible" />-->
+
+    <com.jmm.brsap.scrap24x7.util.SwipeRevealLayout
+        android:id="@+id/selected_item_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        app:dragFromEdge="right"
+        tools:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal">
+
+                <com.jmm.brsap.scrap24x7.util.SwipeMenuItem
+                    android:id="@+id/btn_action_1"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:SwipeMenuItemBackground="@color/Red"
+                    app:SwipeMenuItemIcon="@drawable/ic_round_close_24"
+                    app:SwipeMenuItemText="Reject" />
+
+                <com.jmm.brsap.scrap24x7.util.SwipeMenuItem
+                    android:id="@+id/btn_action_2"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:SwipeMenuItemBackground="@color/Orange"
+                    app:SwipeMenuItemIcon="@drawable/ic_round_pause_24"
+                    app:SwipeMenuItemText="Hold" />
+
+                <com.jmm.brsap.scrap24x7.util.SwipeMenuItem
+                    android:id="@+id/btn_action_3"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:SwipeMenuItemBackground="@color/colorPrimary"
+                    app:SwipeMenuItemIcon="@drawable/ic_round_check_24"
+                    app:SwipeMenuItemText="Accept" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_selected_item_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="8dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_icon"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    app:cardBackgroundColor="@color/green_20"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/ic_outline_location_on_24"
+                        app:tint="@color/Green" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/tv_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cv_icon"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_main_title"
+                    tools:text="ID : " />
+
+                <TextView
+                    android:id="@+id/tv_main_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_sub_title"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_secondary_title"
+                    app:layout_constraintStart_toEndOf="@+id/cv_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Mumbai" />
+
+                <TextView
+                    android:id="@+id/tv_secondary_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_secondary_subtitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Requested" />
+
+                <TextView
+                    android:id="@+id/tv_secondary_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_secondary_title"
+                    tools:text="Aug 21,2021" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </FrameLayout>
+    </com.jmm.brsap.scrap24x7.util.SwipeRevealLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_choose"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingVertical="18dp"
+        tools:text="Select"
+        app:iconGravity="textStart"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/Silver"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_change"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingVertical="18dp"
+        android:text="@string/change"
+        android:visibility="gone"
+        app:iconGravity="textStart"
+        app:strokeColor="@color/Silver"
+        app:strokeWidth="1dp"
+        tools:visibility="visible" />
+
+
+</LinearLayout>

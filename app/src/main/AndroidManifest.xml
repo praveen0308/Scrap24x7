@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jmm.brsap.scrap24x7">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Scrap24x7"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".ui.UserNotifications"></activity>
+        <activity android:name=".ui.admin.pickupRequest.AssignPickupRequest" />
+        <activity android:name=".ui.admin.manageUser.AddNewExecutive" />
+        <activity android:name=".ui.admin.manageUser.ManageUserActivity" />
+        <activity android:name=".ui.pickuprequest.PickupDetailActivity" />
+        <activity android:name=".ui.admin.manageUser.AddNewDriver" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ui.customer.dashboard.AddNewAddress"
+            android:label="@string/title_activity_add_new_address" />
+        <activity android:name=".ui.executive.PickupCollection" />
+        <activity android:name=".ui.executive.PickupAction" />
+        <activity android:name=".ui.executive.TodayCollection" />
+        <activity android:name=".ui.executive.HomeExecutive" />
+        <activity android:name=".ui.admin.manageScrap.AddScrapCategory" />
+        <activity android:name=".ui.admin.manageScrap.ManageScrapActivity" />
+        <activity android:name=".ui.admin.AddNewVehicle" />
+        <activity
+            android:name=".ui.admin.NavigationActivity"
+            android:theme="@style/FullScreen" />
+        <activity android:name=".ui.admin.AdminNavigationActivity" />
+        <activity android:name=".ui.admin.HomeAdmin" />
+        <activity android:name=".ui.customer.account.EditCustomerProfile" />
+        <activity android:name=".ui.customer.account.AccountActivity" />
+        <activity android:name=".ui.RaisePickupRequest" />
+        <activity android:name=".ui.customer.HomeCustomer" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Firebase -->
+
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_logo" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+    </application>
+
+</manifest>

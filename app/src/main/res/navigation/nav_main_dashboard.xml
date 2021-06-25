@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_dashboard"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.jmm.brsap.scrap24x7.ui.customer.dashboard.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/account"
+        android:name="com.jmm.brsap.scrap24x7.ui.customer.dashboard.Account"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/pickupHistory"
+        android:name="com.jmm.brsap.scrap24x7.ui.customer.dashboard.PickupHistory"
+        android:label="fragment_pickup_history"
+        tools:layout="@layout/fragment_pickup_history" />
+    <fragment
+        android:id="@+id/sellScrap"
+        android:name="com.jmm.brsap.scrap24x7.ui.customer.dashboard.SellScrap"
+        android:label="fragment_sell_scrap"
+        tools:layout="@layout/fragment_sell_scrap" />
+</navigation>

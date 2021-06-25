@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "399091812981",
+    "project_id": "scrap24x7-6fcb8",
+    "storage_bucket": "scrap24x7-6fcb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399091812981:android:f02a5ac8b67b7938da063c",
+        "android_client_info": {
+          "package_name": "com.jmm.brsap.scrap24x7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399091812981-8heefiilbh499qk4boagqdlt30ir2ch6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCJsYVBuD2d049yRZKfr7Jm67Bfl1ZDZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399091812981-8heefiilbh499qk4boagqdlt30ir2ch6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

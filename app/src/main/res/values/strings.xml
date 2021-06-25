@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Scrap24x7</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="forget_your_password">Forget your password?</string>
+    <string name="next">Next</string>
+    <string name="login">Login</string>
+    <string name="_0">0</string>
+
+
+    <string name="what_would_you_like_to" translatable="false">What would you like to sell?</string>
+    <string name="type_your_mobile_number" translatable="false">Type your mobile number</string>
+    <string name="we_do_not_pickup_wood_cloth_and_glass" translatable="false">We do not pickup wood, cloth and glass</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="pickup_requests">Pickup requests</string>
+
+    <string name="how_it_works">How it works</string>
+    <string name="share_us">Share us</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="change_language">Change language</string>
+    <string name="logout">Logout</string>
+    <string name="select_scrap_items_for_pickup">Select scrap items for pickup</string>
+    <string name="price_may_be_change">Price may be change</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500</string>
+    <string name="ind_contact">+91</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="mobile_verfication">Mobile verfication</string>
+    <string name="payment_acceptance">Payment Acceptance</string>
+    <string name="item_pickup">Item Pickup</string>
+    <string name="select_for_selling">Select scrap items for selling</string>
+    <string name="choose_for_scrap_pickup">Choose a date for scrap pickup</string>
+    <string name="pickup_boys_arrive">Pickup boys will arrive at your home</string>
+    <string name="scrap_sold">Scrap sold :-)</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="rupees_symbol">₹</string>
+    <string name="pickup_location">Pickup location</string>
+    <string name="new_design">New Design</string>
+
+    <string name="top_sheet_behavior" translatable="false">com.jmm.brsap.scrap24x7.util.topSheetDialog.TopSheetBehavior</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="select_pickup_address">Select Pickup Address</string>
+    <string name="title_activity_add_new_address">Map</string>
+    <string name="scrap_impact">Scrap Impact</string>
+    <string name="raise_pickup_request">Raise pickup request</string>
+    <string name="change">Change</string>
+    <string name="confirm">Confirm</string>
+    <string name="msg_onboarding_1">Scrap 24x7 is leading company for scrap , you sell it we will take care your scrap.</string>
+    <string name="msg_onboarding_2">Choose a date for your scrap , we are flexible to collect your scrap on your desired date.</string>
+    <string name="msg_onboarding_3">Raise your pickup request our pickup boy will arrive at your location to collect scrap.</string>
+    <string name="msg_onboarding_4">Once you sold your scrap no need to worry rest we will take care.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="add_new_warehouse">Add New Warehouse</string>
+    <string name="add_new_vehicle">Add new vehicle</string>
+    <string name="add_new_location">Add new location</string>
+    <string name="search">Search</string>
+    <string name="submit">Submit</string>
+    <string name="select_display_image_for_category">Select display image for category</string>
+    <string name="category_name">Category Name</string>
+    <string name="description">Description</string>
+    <string name="choose_scrap_items">Choose Scrap Items</string>
+    <string name="selected_scrap_items">Selected scrap items</string>
+    <string name="_continue">Continue</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="locality">Locality</string>
+    <string name="sub_locality">Sub Locality</string>
+    <string name="email_address">Email address</string>
+    <string name="year">Year</string>
+    <string name="model">Model</string>
+    <string name="vehicle_manufacturer">Vehicle manufacturer</string>
+    <string name="color">Color</string>
+    <string name="chassis_number">Chassis number</string>
+    <string name="plate_number">Plate number</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="vehicle_detail">Vehicle Detail</string>
+    <string name="owner_s_address">Owner\'s Address</string>
+    <string name="owner_s_name">Owner\'s Name</string>
+    <string name="owner_detail">Owner Detail</string>
+    <string name="select_location">Select location</string>
+    <string name="location_detail">Location Detail</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="name">Name</string>
+    <string name="alternate_number">Alternate Number</string>
+    <string name="address">Address</string>
+    <string name="aadhaar_number">Aadhaar Number</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="pan_number">Pan Number</string>
+    <string name="new_location">New Location</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+
+    <string name="something_wrong">Something went wrong !!!</string>
+
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_backspace">Back</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="customer">Customer</string>
+    <string name="not_available_in_area_msg">Sorry, we\'re currently not available in your area. We\'ll notify you soon.</string>
+    <string name="phone_number">9699960540</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="select_item_for_pickup">Select Items for pickup</string>
+    <string name="pickup_confirmation">Pickup Confirmation</string>
+    <string name="filter_pickup_request">Filter Pickup Request</string>
+    <string name="reject">Reject</string>
+    <string name="hold">Hold</string>
+    <string name="accept">Accept</string>
+    <string name="add">Add</string>
+
+    <string name="dummy_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel bibendum dui. Aliquam non ultrices nunc, sit amet auctor ante. Suspendisse tristique vulputate egestas.</string>
+    <string name="dummy_address"><![CDATA[Victoria Church, Sitladevi Temple Road, Opp. Kesari Tours & Travels, Mahim]]></string>
+    <string name="filter">Filter</string>
+    <string name="all">All</string>
+    <string name="raised">Raised</string>
+    <string name="today_s_pickup">Today\'s Pickup</string>
+    <string name="pickup">Pickup</string>
+    <string name="default_notification_channel_id">Default</string>
+
+    <string name="about_us_text">
+
+    </string>
+    <string name="location">Location</string>
+
+    <string name="warehouse">Warehouse</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_raise_pickup_request"
+    app:startDestination="@id/selectPickupItem">
+
+    <fragment
+        android:id="@+id/selectPickupItem"
+        android:name="com.jmm.brsap.scrap24x7.ui.pickuprequest.SelectPickupItem"
+        android:label="fragment_select_pickup_item"
+        tools:layout="@layout/fragment_select_pickup_item" >
+        <action
+            android:id="@+id/action_selectPickupItem_to_selectPickupDate"
+            app:destination="@id/selectPickupDate" />
+        <argument
+            android:name="selected_category_list"
+            app:argType="integer[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectPickupDate"
+        android:name="com.jmm.brsap.scrap24x7.ui.pickuprequest.SelectPickupDate"
+        android:label="fragment_select_pickup_date"
+        tools:layout="@layout/fragment_select_pickup_date" >
+        <action
+            android:id="@+id/action_selectPickupDate_to_confirmPickupRequest"
+            app:destination="@id/confirmPickupRequest" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmPickupRequest"
+        android:name="com.jmm.brsap.scrap24x7.ui.pickuprequest.ConfirmPickupRequest"
+        android:label="fragment_confirm_pickup_request"
+        tools:layout="@layout/fragment_confirm_pickup_request" >
+        <action
+            android:id="@+id/action_confirmPickupRequest_to_selectPickupDate"
+            app:destination="@id/selectPickupDate" />
+        <action
+            android:id="@+id/action_confirmPickupRequest_to_selectPickupItem"
+            app:destination="@id/selectPickupItem" />
+    </fragment>
+</navigation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/sellScrap"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_assistant_direction_24"
+        android:title="Sell"/>
+
+    <item
+        android:id="@+id/pickupHistory"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_format_list_bulleted_24"
+        android:title="History" />
+    <item
+        android:id="@+id/account"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Account"/>
+</menu>

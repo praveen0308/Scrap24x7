@@ -1,0 +1,171 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Scrap24x7" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnPrimary</item>
+<!--        <item name="fontFamily">@font/montserrat_fonts</item>-->
+        <item name="fontFamily">@font/nunito_family</item>
+        <!-- Customize your theme here. -->
+
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+    </style>
+
+    <style name="FullScreen" parent="Theme.Scrap24x7">
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyPopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">-4dp</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+    </style>
+
+
+    <style name="Theme.Design.TopSheetDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.TopSheetDialog</item>
+        <item name="bottomSheetStyle">@style/Widget.Design.TopSheet.Modal</item>
+    </style>
+
+    <style name="Theme.Design.Light.TopSheetDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.TopSheetDialog</item>
+        <item name="bottomSheetStyle">@style/Widget.Design.TopSheet.Modal</item>
+    </style>
+
+
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+
+    <!--    Keyboard style-->
+    <style name="keyboard_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@drawable/keyboard_divider</item>
+        <item name="android:gravity">center</item>
+        <item name="android:showDividers">beginning|middle|end</item>
+    </style>
+
+    <style name="keyboard_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@drawable/keyboard_button_bg</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="keyboard_number_button" parent="keyboard_button">
+        <item name="android:tag">number_button</item>
+    </style>
+
+
+    <!--    TextAppearances-->
+
+    <style name="Label" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/headingSecondaryColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="Label1" parent="@style/Label">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Label2" parent="@style/Label">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Label3" parent="@style/Label">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Label4" parent="@style/Label">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Label5" parent="@style/Label">
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="Value" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">monospace</item>
+        <item name="fontFamily">@font/nunito_semi_bold</item>
+        <item name="font">@font/nunito_semi_bold</item>
+
+    </style>
+
+    <style name="Value1" parent="@style/Value">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Value2" parent="@style/Value">
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <style name="Value3" parent="@style/Value">
+        <item name="android:textSize">22sp</item>
+
+    </style>
+
+    <style name="Value4" parent="@style/Value">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="StepView">
+        <item name="sv_selectedCircleColor">@color/stepview_circle_selected</item>
+        <item name="sv_selectedCircleRadius">14dp</item>
+        <item name="sv_selectedTextColor">@color/stepview_text_selected</item>
+        <item name="sv_selectedStepNumberColor">@color/stepview_selected_number</item>
+        <item name="sv_stepNumberTextSize">12sp</item>
+        <item name="sv_doneStepMarkColor">@color/stepview_mark</item>
+        <item name="sv_doneCircleColor">@color/stepview_circle_done</item>
+        <item name="sv_doneCircleRadius">14dp</item>
+        <item name="sv_doneTextColor">@color/stepview_text_done</item>
+        <item name="sv_nextTextColor">@color/stepview_text_next</item>
+        <item name="sv_nextStepLineColor">@color/stepview_line_next</item>
+        <item name="sv_doneStepLineColor">@color/stepview_line_done</item>
+        <item name="sv_stepPadding">12dp</item>
+        <item name="sv_textPadding">12dp</item>
+        <item name="sv_stepLineWidth">0.5dp</item>
+        <item name="sv_animationDuration">200</item>
+        <item name="sv_textSize">14sp</item>
+        <item name="sv_animationType">Line</item>
+    </style>
+</resources>

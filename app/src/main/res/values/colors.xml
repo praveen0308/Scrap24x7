@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimary">#03831F</color>
+    <color name="colorPrimaryDark">#075600</color>
+    <color name="green_20">#3754B948</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorTransparent">#00FCFEFF</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTrans">#75212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="smoke_gray">#E4E4E4</color>
+
+    <color name="Red">#FF0000</color>
+    <color name="Cyan">#00FFFF</color>
+    <color name="Blue">#2196F3</color>
+    <color name="DarkBlue">#0000A0</color>
+    <color name="LightBlue">#ADD8E6</color>
+    <color name="Purple">#800080</color>
+    <color name="Yellow">#FFFF00</color>
+    <color name="Lime">#00FF00</color>
+    <color name="Magenta">#FF00FF</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="Grey">#808080</color>
+    <color name="Orange">#FFA500</color>
+    <color name="Brown">#A52A2A</color>
+    <color name="Maroon">#800000</color>
+    <color name="Green">#008000</color>
+    <color name="Olive">#808000</color>
+    <color name="CreamyRed">#DB3022</color>
+    <color name="dirtyWhite">#e8e4c9</color>
+    <color name="whiteSmoke">#F5F5F5</color>
+    <color name="headingColor">#5F5F5F</color>
+    <color name="headingSecondaryColor">#A0A0A0</color>
+    <color name="colorTextValue">#383838</color>
+    <color name="progressbarBackgroundColor">#b6bbd8</color>
+
+
+    <color name="stepview_line_done">@android:color/white</color>
+    <color name="stepview_line_next">#26ffffff</color>
+    <color name="stepview_text_next">#40ffffff</color>
+    <color name="stepview_text_done">#40ffffff</color>
+    <color name="stepview_text_selected">@android:color/white</color>
+    <color name="stepview_circle_done">@android:color/white</color>
+    <color name="stepview_circle_selected">@android:color/white</color>
+    <color name="stepview_selected_number">#25448a</color>
+    <color name="stepview_mark">@color/stepview_selected_number</color>
+</resources>

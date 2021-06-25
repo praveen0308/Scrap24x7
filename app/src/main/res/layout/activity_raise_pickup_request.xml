@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RaisePickupRequest"
+    android:background="@drawable/bg_home">
+
+    <com.jmm.brsap.scrap24x7.util.StepView
+        android:id="@+id/stepView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="10dp"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_raise_pickup_request"
+        app:sv_animationType="All"
+        app:sv_doneCircleColor="@color/white"
+        app:sv_doneCircleRadius="12dp"
+
+        app:sv_doneStepLineColor="@color/colorPrimary"
+        app:sv_doneStepMarkColor="@color/colorPrimary"
+        app:sv_doneTextColor="@color/colorPrimary"
+        app:sv_nextStepCircleColor="@color/white"
+
+        app:sv_nextStepCircleEnabled="true"
+        app:sv_nextStepLineColor="@color/Grey"
+        app:sv_nextTextColor="@color/colorPrimary"
+        app:sv_selectedCircleColor="@color/colorPrimary"
+        app:sv_selectedCircleRadius="12dp"
+        app:sv_selectedStepNumberColor="@color/white"
+        app:sv_selectedTextColor="@color/colorPrimary"
+        app:sv_stepLineWidth="1dp"
+        app:sv_stepNumberTextSize="12sp"
+        app:sv_stepPadding="4dp"
+        app:sv_stepViewStyle="@style/StepView"
+        app:sv_stepsNumber="3"
+        app:sv_textSize="14sp" />
+
+    <com.jmm.brsap.scrap24x7.util.ApplicationToolbar
+        android:id="@+id/toolbar_raise_pickup_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:ATNavIcon="@drawable/ic_round_arrow_back_24"
+        app:ATTitle="Raise Pickup Request"
+        />
+
+    <fragment
+        android:id="@+id/nav_host_raise_pickup_request"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepView"
+        app:navGraph="@navigation/nav_raise_pickup_request" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

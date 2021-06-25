@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="28dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+
+    android:weightSum="3"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btn_less"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_round_horizontal_rule_24"
+        android:background="@color/colorPrimary"
+        app:tint="@color/white"
+        app:shapeAppearance="@style/Circular"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1"
+        android:layout_marginVertical="2dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="16sp"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btn_more"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_round_add_24"
+        android:background="@color/colorPrimary"
+        app:tint="@color/white"
+        app:shapeAppearance="@style/Circular"
+
+        />
+</LinearLayout>

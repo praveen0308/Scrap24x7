@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_executive"
+    app:startDestination="@id/executiveDashboard">
+
+    <fragment
+        android:id="@+id/executiveDashboard"
+        android:name="com.jmm.brsap.scrap24x7.ui.executive.ExecutiveDashboard"
+        android:label="fragment_executive_dashboard"
+        tools:layout="@layout/fragment_executive_dashboard" />
+    <fragment
+        android:id="@+id/executivePickupHistory"
+        android:name="com.jmm.brsap.scrap24x7.ui.executive.ExecutivePickupHistory"
+        android:label="fragment_executive_pickup_history"
+        tools:layout="@layout/fragment_executive_pickup_history" />
+    <fragment
+        android:id="@+id/executiveProfile"
+        android:name="com.jmm.brsap.scrap24x7.ui.executive.ExecutiveProfile"
+        android:label="fragment_executive_profile"
+        tools:layout="@layout/fragment_executive_profile" />
+</navigation>

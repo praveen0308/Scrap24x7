@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_welcome"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.jmm.brsap.scrap24x7.ui.welcome.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_onBoardingScreen"
+            app:destination="@id/onBoardingScreen"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_welcome"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_splashScreen_to_loginSignupScreen"
+            app:destination="@id/loginSignupScreen" />
+        <action
+            android:id="@+id/action_splashScreen_to_homeCustomer"
+            app:destination="@id/homeCustomer" />
+        <action
+            android:id="@+id/action_splashScreen_to_homeAdmin"
+            app:destination="@id/homeAdmin" />
+        <action
+            android:id="@+id/action_splashScreen_to_homeExecutive"
+            app:destination="@id/homeExecutive" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingScreen"
+        android:name="com.jmm.brsap.scrap24x7.ui.welcome.OnBoardingScreen"
+        android:label="fragment_on_boarding_screen"
+        tools:layout="@layout/fragment_on_boarding_screen" >
+        <action
+            android:id="@+id/action_onBoardingScreen_to_loginSignupScreen"
+            app:destination="@id/loginSignupScreen"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_welcome"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loginSignupScreen"
+        android:name="com.jmm.brsap.scrap24x7.ui.welcome.LoginSignupScreen"
+        android:label="fragment_login_signup_screen"
+        tools:layout="@layout/fragment_login_signup_screen" >
+        <action
+            android:id="@+id/action_loginSignupScreen_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_loginSignupScreen_to_mainDashboard"
+            app:destination="@id/homeCustomer" />
+        <action
+            android:id="@+id/action_loginSignupScreen_to_OTPVerification"
+            app:destination="@id/OTPVerification" />
+        <action
+            android:id="@+id/action_loginSignupScreen_to_homeAdmin"
+            app:destination="@id/homeAdmin" />
+        <action
+            android:id="@+id/action_loginSignupScreen_to_homeExecutive"
+            app:destination="@id/homeExecutive" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.jmm.brsap.scrap24x7.ui.welcome.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_loginSignupScreen"
+            app:destination="@id/loginSignupScreen" />
+    </fragment>
+    <activity
+        android:id="@+id/homeCustomer"
+        android:name="com.jmm.brsap.scrap24x7.ui.customer.HomeCustomer"
+        android:label="activity_main_dashboard"
+        tools:layout="@layout/activity_home_customer" />
+    <fragment
+        android:id="@+id/OTPVerification"
+        android:name="com.jmm.brsap.scrap24x7.ui.welcome.OTPVerification"
+        android:label="fragment_o_t_p_verification"
+        tools:layout="@layout/fragment_o_t_p_verification" >
+        <action
+            android:id="@+id/action_OTPVerification_to_mainDashboard"
+            app:destination="@id/homeCustomer" />
+    </fragment>
+    <activity
+        android:id="@+id/homeAdmin"
+        android:name="com.jmm.brsap.scrap24x7.ui.admin.HomeAdmin"
+        android:label="activity_home_admin"
+        tools:layout="@layout/activity_home_admin" />
+    <activity
+        android:id="@+id/homeExecutive"
+        android:name="com.jmm.brsap.scrap24x7.ui.executive.HomeExecutive"
+        android:label="activity_home_exucutive"
+        tools:layout="@layout/activity_home_exucutive" />
+</navigation>
