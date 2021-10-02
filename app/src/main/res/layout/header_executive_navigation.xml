@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/img_profile"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="4dp"
         android:scaleType="centerInside"
@@ -28,7 +28,7 @@
         android:layout_height="26dp"
         android:layout_marginStart="16dp"
         android:text="Welcome, User"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/white"
 
         android:textStyle="bold"

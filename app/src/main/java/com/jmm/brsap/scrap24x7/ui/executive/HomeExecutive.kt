@@ -40,10 +40,10 @@ class HomeExecutive : BaseActivity(), ApplicationToolbar.ApplicationToolbarListe
         setContentView(binding.root)
         navController = Navigation.findNavController(this, R.id.nav_host_executive)
         binding.toolbarHomeExecutive.setApplicationToolbarListener(this)
-        binding.executiveNavigationDrawer.setNavigationItemSelectedListener(this)
+
         binding.executiveNavigationDrawer.bringToFront()
         binding.executiveNavigationDrawer.setupWithNavController(navController)
-
+        binding.executiveNavigationDrawer.setNavigationItemSelectedListener(this)
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -70,8 +70,9 @@ class HomeExecutive : BaseActivity(), ApplicationToolbar.ApplicationToolbarListe
 
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+
         when(item.itemId){
-            R.id.executiveDashboard->{
+            R.id.executiveLogOut->{
             val dialogClickListener =
                 DialogInterface.OnClickListener { dialog, which ->
                     when (which) {
@@ -82,7 +83,6 @@ class HomeExecutive : BaseActivity(), ApplicationToolbar.ApplicationToolbarListe
                             startActivity(intent)
                             finish()
                             dialog.dismiss()
-
                         }
                         DialogInterface.BUTTON_NEGATIVE -> {
                             dialog.dismiss()
