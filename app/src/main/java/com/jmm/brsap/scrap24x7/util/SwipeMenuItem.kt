@@ -26,7 +26,6 @@ class SwipeMenuItem @kotlin.jvm.JvmOverloads constructor(
 
     private var binding = SwipeMenuItemBinding.inflate(LayoutInflater.from(context))
 
-
     init {
         addView(binding.root)
 
